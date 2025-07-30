@@ -1,21 +1,23 @@
+
+
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; 
-import '../pages/AuthenticationInterface.css';
+import { useNavigate } from 'react-router-dom';
+import '../pages/AuthenticationInterface.css'; // Reuse styling or create new CSS if needed
+import { Link } from 'react-router-dom';
 
-interface LoginProps {
-  onLoginSuccess: () => void;
-}
-
-const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
+const Signup: React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (email && password) {
-      onLoginSuccess();
+      // handle signup logic here
+      alert('Signup successful');
+      navigate('/'); // or navigate to login
     } else {
-      alert("Please enter both email and password.");
+      alert('Please fill in all fields.');
     }
   };
 
@@ -24,42 +26,35 @@ const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
       <div className="login-content">
         <img src="/logo.png" alt="Derma AI Logo" className="logo" />
         <div className="login-container">
-          <h2>Log In</h2>
-      
+          <Link to="/" className="back-arrow">←</Link>
+
+          <h2>Sign Up</h2>
+
           <form onSubmit={handleSubmit}>
-            <label>Email address</label>
+            <label>Email Address</label>
             <input
               type="email"
-              placeholder="Email address"
+              placeholder="Enter your email address"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
             />
+
             <label>Password</label>
             <input
               type="password"
-              placeholder="Enter password"
+              placeholder="Enter your new password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
             />
 
-            {}
-            <div className="forgot-password">
-              <Link to="/forgot-password">Forgot your password?</Link>
-            </div>
-
-            <button type="submit">Log in</button>
+            <button type="submit">Submit</button>
           </form>
-
-   <p className="subtext">
-  Don’t have an account? <Link to="/signup">Sign Up.</Link>
-</p>
-
         </div>
       </div>
     </div>
   );
 };
 
-export default Login;
+export default Signup;

@@ -1,10 +1,11 @@
 .login-page {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  width: 100vw; /* Add this */
   background: #eef4f9;
-  background-image: url('/background.png'); 
+  background-image: url('/background.png');
   background-size: cover;
   background-position: center;
   padding: 2rem;
@@ -14,7 +15,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center; /* Add this */
+  width: 100%;
 }
+
 
 .logo {
   height: 80px;
