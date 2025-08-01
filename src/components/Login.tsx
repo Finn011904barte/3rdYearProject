@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; 
-import '../pages/AuthenticationInterface.css';
+import '../pages/Login.css';
 
 interface LoginProps {
   onLoginSuccess: () => void;

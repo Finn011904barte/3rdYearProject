@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../pages/AuthenticationInterface.css';
+import '../pages/OtpVerification.css';
 
 const OtpVerification: React.FC = () => {
   const [otp, setOtp] = useState('');

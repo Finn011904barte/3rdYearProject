@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../pages/AuthenticationInterface.css'; // Reuse styling or create new CSS if needed
+import '../pages/Signup.css'; 
 import { Link } from 'react-router-dom';
 
 const Signup: React.FC = () => {
@@ -13,9 +13,9 @@ const Signup: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (email && password) {
-      // handle signup logic here
+ 
       alert('Signup successful');
-      navigate('/'); // or navigate to login
+      navigate('/'); 
     } else {
       alert('Please fill in all fields.');
     }

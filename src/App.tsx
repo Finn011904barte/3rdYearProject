@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Login from './components/Login';
-import Signup from './components/Signup'; // <-- Make sure path is correct
+import Signup from './components/Signup'; 
 import Welcome from './components/Welcome';
 import ForgotPassword from './components/ForgotPassword';
 import OtpVerification from './components/OtpVerification';
