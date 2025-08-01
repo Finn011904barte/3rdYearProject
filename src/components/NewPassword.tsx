@@ -18,10 +18,10 @@ const NewPassword: React.FC = () => {
   };
 
   return (
-    <div className="login-page">
-      <div className="login-content">
+    <div className="Newpassword-page">
+      <div className="Newpassword-content">
         <img src="/logo.png" alt="Derma AI Logo" className="logo" />
-        <div className="login-container">
+        <div className="Newpassword-container">
           <h2>Reset Password</h2>
           <p className="subtext">✅ OTP Verified! You can now reset your password.</p>
 

@@ -17,10 +17,10 @@ const OtpVerification: React.FC = () => {
   };
 
   return (
-    <div className="login-page">
-      <div className="login-content">
+    <div className="OtpVerification-page">
+      <div className="OtpVerification-content">
         <img src="/logo.png" alt="Derma AI Logo" className="logo" />
-        <div className="login-container">
+        <div className="OtpVerification-container">
           <h2>Verify OTP</h2>
           <p className="subtext">Enter the code we emailed to you.</p>
           <form onSubmit={handleSubmit}>

@@ -15,10 +15,10 @@ const ForgotPassword: React.FC = () => {
   };
 
   return (
-    <div className="login-page">
-      <div className="login-content">
+    <div className="forgotpassword-page">
+      <div className="forgotpassword-content">
         <img src="/logo.png" alt="Derma AI Logo" className="logo" />
-        <div className="login-container">
+        <div className="forgotpassword-container">
           <h2>Forgot Password</h2>
           <p className="subtext">Enter your email and we’ll send you reset instructions.</p>
           <form onSubmit={handleSubmit}>

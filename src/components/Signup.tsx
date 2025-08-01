@@ -22,10 +22,10 @@ const Signup: React.FC = () => {
   };
 
   return (
-    <div className="login-page">
-      <div className="login-content">
+    <div className="Signup-page">
+      <div className="Signup-content">
         <img src="/logo.png" alt="Derma AI Logo" className="logo" />
-        <div className="login-container">
+        <div className="Signup-container">
           <Link to="/" className="back-arrow">←</Link>
 
           <h2>Sign Up</h2>
